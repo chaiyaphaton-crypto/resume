@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.container{
+    width:1100px;
+    margin:50px auto;
+    display:flex;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.left{
+    width:35%;
+    background:#1e293b;
+    color:white;
+    padding:40px;
+    text-align:center;
+}
+
+.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+}
+
+.left h1{
+    font-size:36px;
+}
+
+.left h3{
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.section{
+    text-align:left;
+    margin-top:30px;
+}
+
+.section h2{
+    margin-bottom:15px;
+    border-bottom:2px solid #475569;
+    padding-bottom:10px;
+}
+
+.section p,
+.section li{
+    margin:10px 0;
+}
+
+.section ul{
+    list-style:none;
+}
+
+.right{
+    width:65%;
+    background:white;
+    padding:40px;
+}
+
+.right h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.card{
+    background:#f8fafc;
+    padding:20px;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+#themeBtn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+}
+
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+    display:none;
+}
+
+.hidden{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all 0.8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.dark{
+    background:#0f172a;
+}
+
+.dark .right{
+    background:#1e293b;
+    color:white;
+}
+
+.dark .card{
+    background:#334155;
+    color:white;
+}
+
+@media(max-width:900px){
+
+    .container{
+        width:95%;
+        flex-direction:column;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+}
